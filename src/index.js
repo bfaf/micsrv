@@ -36,7 +36,7 @@ const express = require('express');
 const app = express();
 
 let requestCounter = 0;
-const MAX_REQUESTS_PER_SECOND = 3;
+const MAX_REQUESTS_PER_SECOND = 8;
 
 const exitIfHasTooManyRequests = () => {
     const t = setTimeout(() => {
@@ -82,4 +82,4 @@ app.put('/switch', function (req, res) {
     res.sendStatus(200);
   });
 
-app.listen(3000, () => { log.info('Server started'); });
+app.listen(3123, () => { log.info('Server started'); });
