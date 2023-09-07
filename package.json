@@ -1,0 +1,18 @@
+{
+  "name": "micsrv",
+  "version": "1.0.0",
+  "description": "Control muted stated of microphone",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Krasimir Chonov",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "win-audio": "^2.0.2",
+    "winston": "^3.10.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  }
+}
